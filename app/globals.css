@@ -1,0 +1,346 @@
+/*
+  globals.css define estilos globales y variables de color para el proyecto.
+  Está inspirado en una paleta de verdes y tonos naturales para transmitir
+  serenidad y conexión con la naturaleza, tal y como solicita el cliente.
+*/
+
+/*
+  Definición de variables y tipografías. Para modernizar el diseño
+  incorporamos dos fuentes de Google: Poppins para títulos y Inter para
+  textos. Puedes ampliar o ajustar los pesos importando más variantes.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* Importamos los iconos de Bootstrap Icons desde un CDN. Estos iconos se
+   utilizan en el pie de página para enlazar las redes sociales. */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css');
+
+:root {
+  /* Paleta de verdes y tonos naturales para transmitir serenidad */
+  --green-dark: #025c42;
+  --green: #1e8a6a;
+  --green-light: #3fae8d;
+  --accent: #6cc551;
+  --background: #f4fdf9;
+  --text-primary: #0b2e13;
+  --text-secondary: #335e44;
+  --white: #ffffff;
+  --font-size-base: 1rem;      
+  --font-size-lg: 1.5rem;    
+  --font-size-xl: 3rem;     
+}
+
+body {
+  font-size: var(--font-size-base);
+}
+
+section h3 {
+  font-size: var(--font-size-xl);
+}
+section h2 {
+  font-size: var(--font-size-xl);
+}
+section p {
+  font-size: var(--font-size-lg);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* Utilizamos Inter como tipografía base para el cuerpo de texto */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  /* Poppins aporta un toque más moderno y elegante a los títulos */
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+section {
+  /* Reducimos ligeramente el padding para secciones más compactas */
+  padding: 3.5rem 0;
+}
+
+/* Clases específicas para el componente Hero */
+/*
+  Ajustes para la sección hero. Utilizamos una nueva imagen de amanecer
+  para emular el estilo de la página de inspiración (Salutissimo), pero
+  mantenemos la paleta verde del proyecto. La imagen se puede
+  reemplazar por cualquier otra colocada en public/images.
+*/
+.hero {
+  position: relative;
+  /* Imagen de amanecer que recuerda al estilo de salutissimo */
+  background: url('/images/gen_sunrise.png') no-repeat center center/cover;
+  color: var(--white);
+  text-align: center;
+}
+
+/*
+  Capa superpuesta para oscurecer ligeramente la imagen de fondo y
+  favorecer la legibilidad del texto en el hero.
+*/
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/*
+  Contenedor del contenido del hero. Se centra verticalmente y
+  ajustamos el padding para dejar espacio al encabezado y al campo de
+  búsqueda.
+*/
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 7rem 1rem 9rem;
+}
+
+/*
+  Estilo para el cuadro de búsqueda en el hero. Inspirado en el campo
+  de búsqueda de salutissimo, utilizamos bordes redondeados y un ligero
+  sombreado para destacarlo sobre el fondo. Ajustamos la altura para
+  alinearlo con el botón.
+*/
+.hero-input {
+  max-width: 350px;
+  height: calc(2.5rem + 2px);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  margin-right: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+/*
+  Estilos para la navegación. Para aproximarnos al diseño de la página
+  salutissimo usamos un fondo claro y texto oscuro, manteniendo los
+  colores de la paleta verde en estados activos y de hover.
+*/
+.navbar-light {
+  background-color: var(--white) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.navbar-light .navbar-brand {
+  color: var(--green-dark) !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--text-primary) !important;
+  font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--green) !important;
+}
+
+/*
+  Estilo del icono del botón de menú (hamburguesa) en dispositivos
+  pequeños para que adopte el color principal.
+*/
+.navbar-toggler-icon {
+  background-image: none;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+  content: '';
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  margin: 0.3rem auto;
+  background-color: var(--green-dark);
+  transition: all 0.3s;
+}
+
+/*
+  Gradiente suave para el pie de página inspirado en el sitio del
+  Instituto Ángeles Wolder. Utiliza los tonos verdes para mantener la
+  coherencia cromática con el resto de la web.
+*/
+footer {
+  background: linear-gradient(90deg, var(--green) 0%, var(--green-dark) 100%);
+  color: var(--white);
+  padding: 3rem 0;
+}
+footer a {
+  color: var(--white);
+  text-decoration: underline;
+}
+footer a:hover {
+  color: var(--accent);
+}
+
+/* Botón personalizado para la marca */
+.btn-brand {
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+}
+
+.btn-brand:hover {
+  background-color: var(--green-light);
+  color: var(--white);
+}
+
+/* Ajustes específicos para la galería: garantizamos que todas las imágenes
+   compartan un formato uniforme (4:3) y se recorten sin distorsión. */
+.gallery-item {
+  position: relative;
+  padding-top: 75%; /* 4:3 ratio */
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer modernizado: define columnas y espaciado */
+footer .footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+footer .footer-column {
+  flex: 1 1 200px;
+}
+
+/* Sección de cita con contraste alto */
+.quote-section {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.quote-section blockquote {
+  margin: 0;
+  font-size: 2.75rem;
+  line-height: 1.4;
+}
+
+.quote-section cite {
+  font-style: normal;
+  font-size: 2rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* -------------------------------------------------------------- */
+/*  Estilos adicionales para nuevas secciones                     */
+/*                                                               */
+/*  Características (Features)                                   */
+/*  Inspirada en las tarjetas de Salutissimo: tarjetas blancas    */
+/*  con bordes redondeados, imágenes recortadas en la parte       */
+/*  superior y textos breves.                                    */
+.feature-section {
+  background-color: var(--background);
+}
+
+.feature-card {
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  padding-bottom: 2rem;
+  text-align: center;
+  height: 100%;
+}
+
+.feature-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.feature-card h3 {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  padding: 0 1.5rem;
+}
+
+.cookie-banner {
+  position: fixed; left: 0; right: 0; bottom: 16px;
+  display: flex; justify-content: center; padding: 0 12px; z-index: 999999;
+  pointer-events: none;
+}
+.cookie-card {
+  pointer-events: auto; display: grid; grid-template-columns: auto 1fr auto;
+  gap: 14px 16px; align-items: center; width: 100%; max-width: 980px;
+  padding: 14px 16px; border-radius: 16px; background: color-mix(in srgb, var(--white) 78%, transparent);
+  backdrop-filter: blur(10px); border: 1px solid rgba(0,0,0,.06); box-shadow: 0 12px 30px rgba(0,0,0,.12);
+  animation: cookie-slide-up .35s ease-out both;
+}
+@keyframes cookie-slide-up { from { transform: translateY(12px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.cookie-icon { font-size: 1.5rem; line-height: 1; }
+.cookie-title { margin: 0 0 4px; font-family: 'Poppins','Inter',sans-serif; font-weight: 600; color: var(--text-primary); }
+.cookie-text { margin: 0; color: var(--text-secondary); font-size: .95rem; }
+.cookie-small { margin: .35rem 0 0; font-size: .85rem; color: var(--text-secondary); }
+.cookie-link { color: var(--green); text-decoration: underline; }
+
+.cookie-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.btn-solid {
+  background: var(--accent); color: var(--white); border: none; padding: 8px 14px;
+  border-radius: 999px; font-weight: 600; cursor: pointer; transition: transform .06s ease, filter .2s ease;
+}
+.btn-solid:hover { filter: brightness(1.03); }
+.btn-solid:active { transform: translateY(1px); }
+.btn-ghost {
+  background: transparent; color: var(--text-primary); border: 1px solid rgba(0,0,0,.12);
+  padding: 8px 14px; border-radius: 999px; font-weight: 600; cursor: pointer; transition: background .2s ease, transform .06s ease;
+}
+.btn-ghost:hover { background: rgba(0,0,0,.04); }
+.btn-ghost:active { transform: translateY(1px); }
+
+@media (max-width: 576px) {
+  .cookie-card { grid-template-columns: 1fr; padding: 16px; }
+  .cookie-icon { display: none; }
+  .cookie-actions { justify-content: stretch; }
+  .btn-ghost, .btn-solid { width: 100%; }
+}
+
+/* Toast de confirmación */
+.cookie-toast {
+  position: fixed; left: 16px; bottom: 16px; z-index: 1000000;
+  background: rgba(0,0,0,.9); color: #fff; padding: 10px 14px; border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.2); font-size: .95rem; animation: cookie-fade .25s ease-out both;
+}
+.cookie-toast a { color: #a0e3a0; text-decoration: underline; margin-left: 8px; }
+@keyframes cookie-fade { from { opacity: 0; transform: translateY(6px);} to { opacity:1; transform:translateY(0);} }
