@@ -32,6 +32,7 @@ export default function Home() {
       <QuoteSection />
       {/* <Service /> */} 
       <Gallery />
+      <Testimonials />
       <Contact />
       <Testimonials />
       <Footer />
