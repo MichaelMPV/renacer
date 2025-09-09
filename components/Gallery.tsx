@@ -21,7 +21,7 @@ export default function Gallery() {
           <div className="col-md-4 mb-4">
             <div className="gallery-item">
               <img
-                src="/images/gallery2.png"
+                src="/images/sesion2.jpg"
                 alt="Manos sosteniendo un brote"
               />
             </div>
@@ -46,7 +46,7 @@ export default function Gallery() {
           <div className="col-md-4 mb-4">
             <div className="gallery-item">
               <img
-                src="/images/ref2.png"
+                src="/images/galleryMe.jpg"
                 alt="Ilustración de manos nutriendo una planta"
               />
             </div>

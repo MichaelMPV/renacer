@@ -7,7 +7,7 @@ export default function History() {
           <div className="col-md-6 order-1 order-md-2">
             <h3 className="mb-3">De la enfermedad al renacer</h3>
             <p className="mb-0">
-              Después de haber sido diagnosticada con una enfermedad incurable, viví el miedo, la soledad y el dolor. Me dijeron que podía perder la voz o el oído tras una operación. Fue entonces cuando comencé a trabajar con mis emociones, liberando viejos resentimientos que desconocía tener.
+              Después de haber sido diagnosticada con una enfermedad incurable, viví el miedo, la soledad y el dolor. Me dijeron que podía perder la voz o dejar de oír tras una operación. Fue entonces cuando comencé a trabajar con mis emociones, liberando viejos resentimientos que desconocía tener.
               Dos meses más tarde, me dijeron que había tenido una remisión espontánea. Comprendí que el perdón es profundamente sanador: me perdoné, me comprendí y trascendí. Así nació  <strong>RENACER</strong>.
             </p>
           </div>
