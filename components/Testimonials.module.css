@@ -1,0 +1,49 @@
+.wrap {
+  background: radial-gradient(1200px 600px at 50% -10%, rgba(99,102,241,.10), transparent),
+              linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.badge {
+  background: rgba(99,102,241,.12);
+  color: #4f46e5;
+  font-weight: 600;
+  padding: .5rem .9rem;
+}
+
+.card {
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,.9);
+  border: 1px solid #e6eaf0;
+  border-radius: 1rem;
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  box-shadow: 0 10px 24px rgba(2,8,20,.06);
+}
+
+.card blockquote {
+  margin: 0;
+  color: #0f172a;
+  line-height: 1.7;
+  font-size: 1.02rem;
+}
+
+.quote {
+  position: absolute;
+  top: .6rem;
+  left: .9rem;
+  font-size: 3rem;
+  color: rgba(99,102,241,.25);
+  line-height: 1;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  font-weight: 700;
+}
