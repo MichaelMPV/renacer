@@ -10,7 +10,7 @@ export default function About() {
         <div className="row align-items-center">
           <div className="col-md-6 mb-4 mb-md-0">
             <img
-              src="/images/aboutMe2.jpg"
+              src="/images/aboutMe3.jpg"
               alt="Silencio interior y conexión con la naturaleza"
               className="img-fluid rounded shadow-sm"
             />
