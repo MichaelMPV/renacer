@@ -43,7 +43,7 @@ export default function Features() {
               />
               <h3>Profesional certificado</h3>
               <p>
-                Formada en Coaching Sistémico y posgrado en Bioneuroemoción,
+                Formada en Coaching Sistémico y Postgrado en Bioneuroemoción,
                 te acompaño con experiencia y calidez humana.
               </p>
             </div>

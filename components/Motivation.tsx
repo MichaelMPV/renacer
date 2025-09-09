@@ -12,7 +12,7 @@ export default function Motivation() {
         <div className="row justify-content-center">
           <div className="col-md-10">
             <p>
-              Formada en <strong>Coaching Sistémico</strong> y posgrado en
+              Formada en <strong>Coaching Sistémico</strong> y Postgrado en
               <strong> Bioneuroemoción</strong>, enfoco mi labor en el apoyo
               holístico a personas en procesos de cambio. Aporto una visión
               integradora que combina mente, emociones y cuerpo.

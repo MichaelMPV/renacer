@@ -46,7 +46,7 @@ export default function Gallery() {
           <div className="col-md-4 mb-4">
             <div className="gallery-item">
               <img
-                src="/images/galleryMe.jpg"
+                src="/images/aboutMe3.jpg"
                 alt="Ilustración de manos nutriendo una planta"
               />
             </div>
