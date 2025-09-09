@@ -9,6 +9,7 @@ import QuoteSection from '../components/Quote';
 import Service from '../components/Service';
 import Gallery from '../components/Gallery';
 import Contact from '../components/Contact';
+import Testimonials from "../components/Testimonials";
 import Footer from '../components/Footer';  
 import dynamic from "next/dynamic";
 
@@ -32,6 +33,7 @@ export default function Home() {
       {/* <Service /> */} 
       <Gallery />
       <Contact />
+      <Testimonials />
       <Footer />
       <CookieConsent/>
     </>
